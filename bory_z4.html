@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sposoby podłączania CSS do kodu strony WWW</title>
+</head>
+
+<body>
+  <h1>Sposoby podłączania CSS do kodu strony WWW</h1>
+
+  <section class="sposob">
+    <h2>1. Zewnętrzny arkusz stylów</h2>
+    <p>Arkusz stylów definiowany w osobnym pliku CSS i linkowany do pliku HTML.</p>
+    <pre>
+      &lt;HEAD&gt;
+        &lt;LINK rel="stylesheet" type="text/css" href="style.css"&gt;
+      &lt;/HEAD&gt;
+    </pre>
+  </section>
+
+  <section class="sposob">
+    <h2>2. Styl lokalny (wpisany, liniowy)</h2>
+    <p>Arkusz stylów definiowany bezpośrednio w sekcji head dokumentu HTML.</p>
+    <pre>
+      &lt;HEAD&gt;
+        &lt;STYLE type="text/css"&gt;
+          body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+          }
+          h1 {
+            color: #333;
+            text-align: center;
+          }
+        &lt;/STYLE&gt;
+      &lt;/HEAD&gt;
+    </pre>
+  </section>
+
+  <section class="sposob">
+    <h2>3. Wewnętrzny arkusz stylów</h2>
+    <p>Arkusz stylów definiowany w elemencie &lt;style&gt; w sekcji body dokumentu HTML.</p>
+    <pre>
+      &lt;body&gt;
+        &lt;style&gt;
+          body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+          }
+          h1 {
+            color: #333;
+            text-align: center;
+          }
+        &lt;/style&gt;
+        ...
+      &lt;/body&gt;
+    </pre>
+  </section>
+
+  <section class="sposob">
+    <h2>4. Alternatywny arkusz stylów</h2>
+    <p>Możliwość definiowania kilku arkuszy stylów i wyboru domyślnego lub w zależności od preferencji użytkownika.</p>
+    <pre>
+      &lt;HEAD&gt;
+        &lt;LINK rel="stylesheet" type="text/css" href="style.css" title="Domyślny"&gt;
+        &lt;LINK rel="alternate stylesheet" type="text/css" href="style1.css" title="Styl 1"&gt;
+        &lt;LINK rel="alternate stylesheet" type="text/css" href="style2.css" title="Styl 2"&gt;
+      &lt;/HEAD&gt;
+    </pre>
+  </section>
+
+  <section class="sposob">
+    <h2>5. Import arkusza stylów</h2>
+    <p>Możliwość włączania arkusza stylów zdefiniowanego w innym pliku za pomocą dyrektywy @import.</p>
+    <pre>
+      &lt;HEAD&gt;
+        &lt;STYLE type="text/css"&gt;
+          @import url("zewnetrzny.css");
+        &lt;/STYLE&gt;
+      &lt;/HEAD&gt;
+    </pre>
+  </section>
+</body>
+
+</html>

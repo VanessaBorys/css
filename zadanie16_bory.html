@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sposoby definiowania kolorów</title>
+<style>
+  body {
+    font-family: sans-serif;
+  }
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  code {
+    background-color: #f8f8f8;
+    padding: 2px 4px;
+  }
+</style>
+</head>
+<body>
+
+
+<table>
+    <tr>
+        <th>Sposób</th>
+        <th>Opis</th>
+        <th>Przykład</th>
+    </tr>
+    <tr>
+        <td>Heksadecymalny</td>
+        <td>Używa kombinacji 6 znaków (0-9, A-F) poprzedzonych znakiem #. Każda para znaków reprezentuje intensywność składowej czerwonej, zielonej i niebieskiej.</td>
+        <td><code>#FF0000</code> (czerwony)</td>
+    </tr>
+    <tr>
+        <td>RGB</td>
+        <td>Określa intensywność czerwieni (R), zieleni (G) i niebieskiego (B) za pomocą liczb całkowitych z zakresu 0-255.</td>
+        <td><code>rgb(255, 255, 0)</code> (żółty)</td>
+    </tr>
+    <tr>
+        <td>Nazwy kolorów</td>
+        <td>Używa predefiniowanych nazw kolorów, takich jak "red", "green", "blue", etc.</td>
+        <td><code>blue</code> (niebieski)</td>
+    </tr>
+    <tr>
+        <td>HSL</td>
+        <td>Określa kolor za pomocą odcienia (Hue - kąt na kole kolorów), nasycenia (Saturation - intensywność koloru) i jasności (Lightness - jak jasny lub ciemny jest kolor).</td>
+        <td><code>hsl(120, 100%, 50%)</code> (zielony)</td>
+    </tr>
+</table>
+
+</body>
+</html>
